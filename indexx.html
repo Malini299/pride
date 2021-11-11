@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Pride Properties</title>
+</head>
+<body>
+    
+    <ul class="menu">
+        <li id="menu1"><a href="#home">Home</a></li>
+        <li id="menu1"><a href="#home"></a></li>
+        <li id="menu1"><a href="#about">About Us</a></li>
+        <li id="menu1"><a href="#contact">Contact Us</a></li>
+        <li id="menu1"><a href="Reg_form.html">Register</a></li>
+       <p class="icon"> <img src="https://www.pridegroup.net/uploads/images/full/8b4663abae8f5f2924d2ec0ed2daa4fd.png" height="55px" width="75px" ></p>
+    </ul>
+    <div class="container cs ">
+        
+    </div>
+    <section id="home">
+        <marquee direction = "right" ><p class="welcome">Welcome To Pride Group</p></marquee>
+        <p class="icn">
+            <a href=""><i class="fa fa-eye" style="font-size:25px; color:black;" ><br>Overview</i></a>&nbsp;<br><br>
+            <a href=""><i class="fa fa-file-text-o" style="font-size:25px; color:black;"><br>Specification</i></a>&nbsp;<br><br>
+            <a href=""><i class="fa fa-file-photo-o" style="font-size:25px;color:black;""><br>Gallery</i></a>&nbsp;<br><br>
+            <a href=""><i class="fa fa-phone" style="font-size:25px;color:black;"><br>Enquiry</i></a></p>
+
+        <button class="btn">Ongoing Projects</button>
+        <br><br>
+        <button class="btn">Completed Projects</button>
+        <!--<a href="#btn" style="font-size: 30px;">Ongoing Projects</a>
+        <br><br>
+        <a href="#btn" style="font-size: 30px;">Completed Projects</a>-->
+
+    </section>
+    <hr/>
+    
+    
+    <section id="about">
+        <img src="https://www.pridegroup.net/uploads/images/full/cd01f0842a9720ac68585263a8ac20e4.jpg" alt="About Banner" width="100%" height="450px">
+        <label class="banner1"><center/>OUR STORY</label>
+        <p class="banner"> The Pride Group has been a leader in developing state-of-the-art commercial and residential projects, having been consistently transforming cityscapes across Pune, Mumbai and Bangalore, since <br>
+            its inception in the mid-1990's. The Group has also forayed into the luxury hospitality segment with its extensive chain of the Pride Group of Hotels, setting new milestones in hospitality standards in the <br>
+             process. We are committed to excellence in design, development, construction and selling residential and commercial spaces for the urban Indian citizen. Our sights are set on the future with a simple motto:<br>
+            Building Tomorrow. Today.
+        </p>
+        <p><u>Successful Projects</u></p>
+        <table>
+            <tr>
+        <th><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT4jBm7q8HNYIKhtI-KHJAYjQBmbTkcp8Oy1w&usqp=CAU" 
+        alt="bangalore" width="80%" height="90%"> </th>
+        <th><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQtgjX1v-RlUvE172iLQi_gLzbJsOYU19rG4A&usqp=CAU" 
+            alt="img2" width="80%" height="90%"></th>
+      
+        </tr>
+        <tr>
+            <td>&nbsp;&nbsp;&nbsp;Bangalore</td>
+            <td>&nbsp;&nbsp;&nbsp;Mumbai</td>
+        </tr>
+        </table>
+       
+    </section>
+    <hr/>
+    <section id="contact">
+        <p class="con"><center>Contact Us</center></p>
+        <div class="container bg">
+            
+            <p class="msg"style=""><center>Leave us your message</center></p>
+        <form >
+            <!--<label for="fname">First Name</label>-->
+           <!----> <input type="text" id="fname" name="firstname" placeholder="Your name.."><br>
+            <!--<label for="lname">Last Name</label>-->
+            <input type="text" id="lname" name="lastname" placeholder="Your last name.."><br>
+           <!-- <label for="city">City</label>-->
+            <select id="city" name="city">
+                <option value="australia">City</option>
+              <option value="australia">Bengaluru</option>
+              <option value="canada"></option>
+              <option value="usa">USA</option>
+            </select>
+            <br>
+            <!--<label for="subject">Subject</label>-->
+            <textarea id="subject" name="subject" placeholder="Write something.." rows="5" cols="8"></textarea><br>
+            <input type="submit" value="Submit">
+            
+        </form>
+        <p style=margin-left:80%;"><img src="data:image/jpeg;base64,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"
+            alt="address" width="50%" height="50%">
+        </p>
+        <p  class="address">
+            
+            Pride Hulkul, 901 9th Floor<br>
+            No.116 Lalbagh Road,<br>
+            Bangalore – 560027<br>
+            
+            080 2222 2424<br>
+            Bangalore@Pridegroup.Net
+            </p>
+        </div>
+        <div class="footer">
+            <p>Our Locations: Bangalore | Mumbai | Hyderabad<br>
+                GST | RERA DISCLAIMER | PRIVACY POLICY
+             </p>
+        </div>
+    
+             
+
+    </section>
+    
+</body>
+</html>

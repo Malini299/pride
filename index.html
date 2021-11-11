@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Registration Form</title>
+    
+    <style>
+        body{
+            background-color:rgb(141, 95, 150);
+            font-family:cursive;
+            font-size: 16px;
+            font-weight: 700;
+            color: white;
+           }
+           
+           .first{
+              padding-left: 10%;
+          
+           }
+           input[type=submit]:hover{
+               
+            box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+
+           }
+           input[type=button]:hover{
+            box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+           }
+           input[type=button]{
+               border-radius: 30%;
+               width:10%;
+               height:40px;
+               background-color:plum;
+               font-weight:900;
+               font-size: 15px;
+           }
+           input[type=submit]{
+            border-radius: 30%;
+            width:10%;
+               height:40px;
+               background-color:plum;
+               font-weight:900;
+               font-size: 15px;
+           }
+          
+  
+           
+          
+    </style>
+</head>
+<body>
+    <h1><center>Employee Registration</center></h1>
+    <hr class="new1">
+    <div class="first">
+    <form name="myForm" autocomplete="off" >
+        <div class="third">
+        <pre style="font-family:cursive;">FirstName:*                                  LastName:</pre>
+       
+        <input type="text" id="Fname" name="Fname" placeholder="FirstName" style="padding-right: 10%;" pattern="^[A-Za-z]+"  >
+        &nbsp;&nbsp;
+        
+        
+        <input type="text" id="Lname" placeholder="LastName" style="padding-right: 10%;" > 
+         
+        <br><br>
+        <label/>Date of birth: &nbsp;
+        <input type="date" id="dob" >
+        <br><br>
+        <label/>Mobile No:*  <input type="tel" id="phone" size="10" pattern="^[0-9]{10}" required>   
+        <br><br>
+        <label/>E-mail Address:*  <input type="email" id="email" pattern="^[a-z0-9.%+-]+@[a-z0-9]+\.[a-z]{2,4}$" required> 
+        <br><br>
+        <label/>Address:
+        <br><br>
+        <textarea rows="7" cols="30" placeholder="Current Address"></textarea>
+        <br><br>
+        <label/>Gender:
+        <br>
+        <input type="radio" id="male" name="gender" value="male" >
+        <label/>Male
+        <input type="radio" id="female" name="gender" value="female">
+        <label/>Female
+        <input type="radio" id="other" name="gender" value="other">
+        <label/>Other
+        <br><br>
+        </div>
+        
+        <label/>Course:
+        <select>
+            <option value="course" required>Course</option>
+            <option value="ME">ME/MTech</option>
+            <option value="MCA">MCA</option>
+            <option value="MBA">MBA</option>
+            <option value="BE">BE/BTech</option>
+            <option value="BCA/BSc">BCA/BSc</option>
+            <option value="Diploma">Diploma in CS</option>
+        </select>
+        <br><br>
+        <label/>Experience: 
+        <input type="number" id="experience" placeholder="in years" min="1" max="10">
+        <br><br>
+        <label/>IT Asset Requisition<br>
+        <input type="checkbox" id="1" value="desktop"/ required>Desktop Computer<br>
+        <input type="checkbox" id="2" value="laptop"/>Laptop<br>
+        <input type="checkbox" id="3" value="datacard"/>Datacard<br>
+        <input type="checkbox" id="4" value="headphones"/>Headphones<br>
+        <input type="checkbox" id="5" value="printer"/>Printer<br>
+        
+        
+        <br>
+        <label/>RTPCR Test Result*<br>
+        <input type="radio" id="pos" name="gender" value="Positive" required>
+        <label/>Positive
+        <input type="radio" id="neg" name="gender" value="Negative">
+        <label/>Negative
+        
+        
+        <p class="btn">
+        <input type="submit"  name="btn"value="Submit" onclick="validateForm()"/>&nbsp;
+        <input type="button" name="btn" value="Cancel"/>
+        
+        </p>
+    </form>
+    </div>
+    <hr>
+    <script src="validate.js"></script>
+</body>
+</html>
